@@ -1,0 +1,108 @@
+.LOGON &LOGON;
+.ERROROUT STDOUT
+SET QUERY_BAND='&QUERYBAND' FOR SESSION;
+
+--NEW STORES
+
+insert into VMS_TABLES.FREESTYLE_MCD_XREF('661','10143370','P08','6762794','2985 FREEPORT BLVD','SACRAMENTO','CA','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_XREF('7677','10294595','P08','2841673','3080 TRAVIS BLVD','FAIRFIELD','CA','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_XREF('10551','10292215','P08','2110113','1500 E MAIN ST','WOODLAND','CA','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_XREF('25604','10299591','P08','4743453','55 W COURT ST','WOODLAND','CA','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_XREF('13226','10117092','P08','5102324','990 ALAMO DR','VACAVILLE','CA','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_XREF('20253','10288893','P08','1076170','170 Iron Point Road','Folsom','CA','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_XREF('776','10313151','P08','6751105','1198 SAN PABLO AVE','Berkeley','CA','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_XREF('10722','10302313','P08','6101194','3375 SUNRISE WAY','Corning','CA','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+-------------------------------------------------------------
+--STORE ASSIGNMENTS
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('mireya.rodriguez@us.stores.mcd.com','661','10143370','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('jennifer.freeman@us.stores.mcd.com','661','10143370','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('harris.liu@partners.mcd.com','661','10143370','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('mireya.rodriguez@us.stores.mcd.com','7677','10294595','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('jennifer.freeman@us.stores.mcd.com','7677','10294595','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('harris.liu@partners.mcd.com','7677','10294595','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('mireya.rodriguez@us.stores.mcd.com','10551','10292215','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('jennifer.freeman@us.stores.mcd.com','10551','10292215','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('harris.liu@partners.mcd.com','10551','10292215','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('mireya.rodriguez@us.stores.mcd.com','25604','10299591','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('jennifer.freeman@us.stores.mcd.com','25604','10299591','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('harris.liu@partners.mcd.com','25604','10299591','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('mireya.rodriguez@us.stores.mcd.com','13226','10117092','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('jennifer.freeman@us.stores.mcd.com','13226','10117092','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('harris.liu@partners.mcd.com','13226','10117092','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('dino.sammakieh@partners.mcd.com','20253','10288893','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('lucas@gilmacinc.com','776','10313151','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('greg@gilmacinc.com','776','10313151','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('pas.00776@us.stores.mcd.com','776','10313151','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('markburington@me.com','10722','10302313','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+-------------------------------------
+--DEFAULT USERS FOR ABOVE NEW STORES
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('RAGHRAO@COCA-COLA.COM','661','10143370','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('KAGANDLA@COCA-COLA.COM','661','10143370','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('VICESPOSITO@COCA-COLA.COM','661','10143370','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('RAGHRAO@COCA-COLA.COM','7677','10294595','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('KAGANDLA@COCA-COLA.COM','7677','10294595','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('VICESPOSITO@COCA-COLA.COM','7677','10294595','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('RAGHRAO@COCA-COLA.COM','10551','10292215','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('KAGANDLA@COCA-COLA.COM','10551','10292215','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('VICESPOSITO@COCA-COLA.COM','10551','10292215','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('RAGHRAO@COCA-COLA.COM','25604','10299591','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('KAGANDLA@COCA-COLA.COM','25604','10299591','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('VICESPOSITO@COCA-COLA.COM','25604','10299591','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('RAGHRAO@COCA-COLA.COM','13226','10117092','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('KAGANDLA@COCA-COLA.COM','13226','10117092','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('VICESPOSITO@COCA-COLA.COM','13226','10117092','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('RAGHRAO@COCA-COLA.COM','20253','10288893','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('KAGANDLA@COCA-COLA.COM','20253','10288893','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('VICESPOSITO@COCA-COLA.COM','20253','10288893','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('RAGHRAO@COCA-COLA.COM','776','10313151','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('KAGANDLA@COCA-COLA.COM','776','10313151','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('VICESPOSITO@COCA-COLA.COM','776','10313151','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('RAGHRAO@COCA-COLA.COM','10722','10302313','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('KAGANDLA@COCA-COLA.COM','10722','10302313','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('VICESPOSITO@COCA-COLA.COM','10722','10302313','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+
+---------------------------------------
+--Removing the emal_addr and replacing new emal_addr
+
+DELETE FROM VMS_TABLES.FREESTYLE_MCD_SEC WHERE EMAL_ADDR = 'christopher.nichols@partners.mcd.com' AND STOR_NO LIKE  '%5065%';
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('trevor.roberts@partners.mcd.com','5065','10120583','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+DELETE FROM VMS_TABLES.FREESTYLE_MCD_SEC WHERE EMAL_ADDR = 'christopher.nichols@partners.mcd.com' AND STOR_NO LIKE  '%12206%';
+
+insert into VMS_TABLES.FREESTYLE_MCD_SEC values('trevor.roberts@partners.mcd.com','12206','10308979','P08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+
+---------------------------------------
+
+--NON MCD CHANGES
+
+INSERT INTO VMS_TABLES.CDO_USR_SEC VALUES('rfullwood@libertyuniverse.com',NULL,'NA','10500246','P08','O','Y',NULL,NULL,NULL,CURRENT_TIMESTAMP(0), CURRENT_USER,CURRENT_TIMESTAMP(0), CURRENT_USER);
+
+.LOGOFF;
