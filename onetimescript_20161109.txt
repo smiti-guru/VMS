@@ -88,7 +88,7 @@ insert into VMS_TABLES.FREESTYLE_MCD_SEC values('VICESPOSITO@COCA-COLA.COM','107
 
 
 ---------------------------------------
---Removing the emal_addr and replacing new emal_addr
+--Removing the emal_addr and replacing new emal_addr---
 
 DELETE FROM VMS_TABLES.FREESTYLE_MCD_SEC WHERE EMAL_ADDR = 'christopher.nichols@partners.mcd.com' AND STOR_NO LIKE  '%5065%';
 
@@ -106,3 +106,5 @@ insert into VMS_TABLES.FREESTYLE_MCD_SEC values('trevor.roberts@partners.mcd.com
 INSERT INTO VMS_TABLES.CDO_USR_SEC VALUES('rfullwood@libertyuniverse.com',NULL,'NA','10500246','P08','O','Y',NULL,NULL,NULL,CURRENT_TIMESTAMP(0), CURRENT_USER,CURRENT_TIMESTAMP(0), CURRENT_USER);
 
 .LOGOFF;
+
+4:00 PM 11/9/2016
