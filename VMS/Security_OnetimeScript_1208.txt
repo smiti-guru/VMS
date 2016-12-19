@@ -1,0 +1,84 @@
+.logon &logon;
+.errorout stdout
+set query_band='&queryband' for session;
+
+
+--removing the emal_addr and replacing new emal_addr
+
+
+update vms_tables.freestyle_mcd_sec set emal_addr ='christopher.nichols@partners.mcd.com'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%trevor.roberts@partners.mcd.com%' and stor_no like '%12206%';
+
+
+
+--updating the sap_id
+
+update vms_tables.freestyle_mcd_sec set cust_id='10303492'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%jennifer.fender@us.stores.mcd.com%' and stor_no like '%773%';
+
+update vms_tables.freestyle_mcd_sec set cust_id='10303492'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%raghrao@coca-cola.com%' and stor_no like '%773%';
+update vms_tables.freestyle_mcd_sec set cust_id='10303492'   , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%kagandla@coca-cola.com%' and stor_no like '%773%';
+update vms_tables.freestyle_mcd_sec set cust_id='10303492'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%vicesposito@coca-cola.com%' and stor_no like '%773%';
+
+update vms_tables.freestyle_mcd_xref set cust_id='10303492'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where stor_no ='773';
+--------------------------------------------------------------
+
+update vms_tables.freestyle_mcd_sec set cust_id='600942176'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%lucas@gilmacinc.com%' and stor_no like '%776%';
+update vms_tables.freestyle_mcd_sec set cust_id='600942176'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%greg@gilmacinc.com%' and stor_no like '%776%';
+update vms_tables.freestyle_mcd_sec set cust_id='600942176'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%pas.00776@us.stores.mcd.com%' and stor_no like '%776%';
+
+update vms_tables.freestyle_mcd_sec set cust_id='600942176'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%raghrao@coca-cola.com%' and stor_no like '%776%';
+update vms_tables.freestyle_mcd_sec set cust_id='600942176'   , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%kagandla@coca-cola.com%' and stor_no like '%776%';
+update vms_tables.freestyle_mcd_sec set cust_id='600942176'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%vicesposito@coca-cola.com%' and stor_no like '%776%';
+
+update vms_tables.freestyle_mcd_xref set cust_id='600942176'   , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where stor_no ='776';
+--------------------------------------------------------------
+
+update vms_tables.freestyle_mcd_sec set cust_id='10312661'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%farisabdel@gmail.com%' and stor_no like '%2428%';
+update vms_tables.freestyle_mcd_sec set cust_id='10312661'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%elijahf01@gmail.com%' and stor_no like '%2428%';
+
+update vms_tables.freestyle_mcd_sec set cust_id='10312661'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%raghrao@coca-cola.com%' and stor_no like '%2428%';
+update vms_tables.freestyle_mcd_sec set cust_id='10312661'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%kagandla@coca-cola.com%' and stor_no like '%2428%';
+update vms_tables.freestyle_mcd_sec set cust_id='10312661'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%vicesposito@coca-cola.com%' and stor_no like '%2428%';
+
+update vms_tables.freestyle_mcd_xref set cust_id='10312661'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where stor_no ='2428';
+----------------------------------------------------------
+
+update vms_tables.freestyle_mcd_sec set cust_id='10291636'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user  where emal_addr like '%rich.pelton@us.mcd.com%' and stor_no like '%19926%';
+
+update vms_tables.freestyle_mcd_sec set cust_id='10291636'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%raghrao@coca-cola.com%' and stor_no like '%19926%';
+update vms_tables.freestyle_mcd_sec set cust_id='10291636'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%kagandla@coca-cola.com%' and stor_no like '%19926%';
+update vms_tables.freestyle_mcd_sec set cust_id='10291636'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where emal_addr like '%vicesposito@coca-cola.com%' and stor_no like '%19926%';
+
+update vms_tables.freestyle_mcd_xref set cust_id='10291636'  , UPDT_TMST = current_timestamp(0),  UPDT_USR_ID = Current_user where stor_no ='19926';
+
+---remove users
+
+
+delete from vms_tables.freestyle_mcd_sec where emal_addr like '%marthanj5@aol.com%' and stor_no like '%24740%' and cust_id like '%600938954%';
+
+delete from vms_tables.freestyle_mcd_sec where emal_addr like '%marthanj5@aol.com%'and stor_no like '%4825%' and cust_id like '%600941133%';
+
+delete from vms_tables.freestyle_mcd_sec where emal_addr like '%cdgavira@gmail.com%'and stor_no like '%33425%' and cust_id like '%10371737%';
+
+delete from vms_tables.freestyle_mcd_sec where emal_addr like '%ricardeathflames@hotmail.com%'and stor_no like '%37265%'  and cust_id like '%10476369%';
+delete from vms_tables.freestyle_mcd_sec where emal_addr like '%jlflores1010@outlook.com%'and stor_no like '%37265%' and cust_id like '%10476369%';
+
+--adding new users
+
+insert into vms_tables.freestyle_mcd_sec values('abdul.mowla@us.stores.mcd.com','2968','10312393','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('atl.17563@us.stores.mcd.com','17563','10289042','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+
+--default users
+
+/*insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','2968','10312393','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','2968','10312393','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','2968','10312393','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','17563','10289042','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','17563','10289042','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','17563','10289042','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user); */
+
+.logoff;
+
+

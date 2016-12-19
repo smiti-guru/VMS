@@ -1,0 +1,146 @@
+.logon &logon;
+.errorout stdout
+set query_band='&queryband' for session;
+
+--new store
+
+
+
+insert into vms_tables.freestyle_mcd_xref('3286','10314205','p08','8767033','610 e prater way','sparks','nv','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_xref('34457','10390463','p08','1528082','5301 hazel ave','fair oaks','ca','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_xref('33812','10343367','p08','788699','7901 college town dr','sacramento','ca','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_xref('14405','10015389','p08','1610244','236 n humboldt ave','willows','ca','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_xref('2955','10313632','p08','8619018','3380 queens blvd','long island','ny','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_xref('3025','10313633','p08','8619034','3167 steinway st','astoria','ny','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_xref('3081','600948979','p08','8558817','3549 broadway','new york','ny','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_xref('3364','10314491','p08','8855099','1872 3rd ave','new york','ny','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_xref('7762','10294913','p08','2934931','208 dyckman st','new york','ny','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_xref('11112','10313994','p08','8710490','501 bay st','staten island','ny','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_xref('12033','10362548','p08','4285204','637 stewart ave','garden city','ny','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_xref('20450','10291590','p08','1927272','608 w 207th st','new york','ny','',current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+
+-------------------------------------------------------------
+--store assignments
+
+insert into vms_tables.freestyle_mcd_sec values('jordan.ruiz@partners.mcd.com','3286','10314205','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('joe.ahumada@partners.mcd.com','34457','10390463','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kiki3575@yahoo.com','34457','10390463','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('joe.ahumada@partners.mcd.com','33812','10343367','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kiki3575@yahoo.com','33812','10343367','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('markburington@me.com','14405','10015389','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('amyanarella@aol.com','2955','10313632','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('oscarin1381@gmail.com','3025','10313633','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('mikeortiz@aol.com','3081','600948979','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('rorlando19218@gmail.com','3364','10314491','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('luishernandez@aol.com','7762','10294913','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('brian.spillane@partners.mcd.com','11112','10313994','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('tkelly750@gmail.com','12033','10362548','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('luishernandez@aol.com','20450','10291590','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+-------------------------------------
+--default users for above new stores
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','3286','10314205','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','3286','10314205','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','3286','10314205','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','34457','10390463','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','34457','10390463','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','34457','10390463','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','33812','10343367','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','33812','10343367','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','33812','10343367','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','2955','10313632','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','2955','10313632','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','2955','10313632','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','3025','10313633','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','3025','10313633','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','3025','10313633','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','3081','600948979','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','3081','600948979','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','3081','600948979','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','3364','10314491','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','3364','10314491','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','3364','10314491','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','7762','10294913','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','7762','10294913','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','7762','10294913','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','11112','10313994','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','11112','10313994','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','11112','10313994','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','12033','10362548','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','12033','10362548','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','12033','10362548','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.freestyle_mcd_sec values('raghrao@coca-cola.com','20450','10291590','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('kagandla@coca-cola.com','20450','10291590','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('vicesposito@coca-cola.com','20450','10291590','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+---------------------------------------
+--removing the emal_addr and replacing new emal_addr
+
+
+delete from vms_tables.freestyle_mcd_sec where emal_addr = 'taty.lopez@us.stores.mcd.com' and stor_no like  '%2419%';
+insert into vms_tables.freestyle_mcd_sec values('blanca.fabela@us.stores.mcd.com','2419','600947793','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+
+delete from vms_tables.freestyle_mcd_sec where emal_addr = 'taty.lopez@us.stores.mcd.com' and stor_no like  '%3769%';
+insert into vms_tables.freestyle_mcd_sec values('blanca.fabela@us.stores.mcd.com','3769','10363148','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+---------------------------------------
+--adding new emal_addr for existing defalt users
+
+insert into vms_tables.freestyle_mcd_sec values('taty.lopez@us.stores.mcd.com','416','600942225','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+insert into vms_tables.freestyle_mcd_sec values('taty.lopez@us.stores.mcd.com','2512','600947789','p08',1,current_timestamp(0),current_user,current_timestamp(0), current_user);
+
+
+---------------------------------------
+--non mcd changes
+insert into vms_tables.cdo_usr_sec values('dieseljohn79@gmail.com',null,'na','10496420','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('stevev@jscmanagementgroup.com',null,'na','10500531','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('dalsher.nagra@gmail.com',null,'na','10500523','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('daniel.farley@firehousesubs.com',null,'na','10500284','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('jscotto@firehousesubs.com',null,'na','10501160','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+
+-------------------------------------
+--default users for above non mcd changes
+
+
+
+insert into vms_tables.cdo_usr_sec values('raghrao@coca-cola.com',null,'na','10496420','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('kagandla@coca-cola.com',null,'na','10496420','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('vicesposito@coca-cola.com',null,'na','10496420','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.cdo_usr_sec values('raghrao@coca-cola.com',null,'na','10500531','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('kagandla@coca-cola.com',null,'na','10500531','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('vicesposito@coca-cola.com',null,'na','10500531','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.cdo_usr_sec values('raghrao@coca-cola.com',null,'na','10500523','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('kagandla@coca-cola.com',null,'na','10500523','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('vicesposito@coca-cola.com',null,'na','10500523','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.cdo_usr_sec values('raghrao@coca-cola.com',null,'na','10500284','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('kagandla@coca-cola.com',null,'na','10500284','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('vicesposito@coca-cola.com',null,'na','10500284','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+
+insert into vms_tables.cdo_usr_sec values('raghrao@coca-cola.com',null,'na','10501160','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('kagandla@coca-cola.com',null,'na','10501160','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+insert into vms_tables.cdo_usr_sec values('vicesposito@coca-cola.com',null,'na','10501160','p08','o','y',null,null,null,current_timestamp(0), current_user,current_timestamp(0), current_user);
+
+.logoff;
+
+
